@@ -2,8 +2,9 @@
   width: 200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #6bc46b; /* 초록색 테마 */
+  background-color: #d0f0d0; /* 배경색 초록색 */
   border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
 }
 
 #input-display {
@@ -12,6 +13,10 @@
   margin-bottom: 10px;
   font-size: 20px;
   text-align: right;
+  background-color: #c8eac8; /* 입력창 배경색 초록색 */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .buttons {
@@ -24,12 +29,14 @@ button {
   width: 100%;
   height: 40px;
   font-size: 18px;
-  background-color: #fff;
+  background-color: #b3e6b3; /* 버튼 배경색 초록색 */
+  color: #333; /* 버튼 글자색 */
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2); /* 버튼 그림자 효과 */
 }
 
 button:hover {
-  background-color: #ddd;
+  background-color: #a3d8a3; /* 마우스 호버시 버튼 배경색 변화 */
 }
