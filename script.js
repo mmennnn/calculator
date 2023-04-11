@@ -1,21 +1,17 @@
-let expression = '';
+let inputDisplay = document.getElementById('input-display');
 
 function clearDisplay() {
-  document.getElementById('display').value = '';
-  expression = '';
+  inputDisplay.value = '';
 }
 
 function appendCharacter(char) {
-  expression += char;
-  document.getElementById('display').value = expression;
+  inputDisplay.value += char;
 }
 
 function evaluateExpression() {
   try {
-    const result = eval(expression);
-    document.getElementById('display').value = result;
-    expression = '';
+    inputDisplay.value = eval(inputDisplay.value);
   } catch (error) {
-    document.getElementById('display').value = 'Error';
+    inputDisplay.value = 'Error';
   }
 }
